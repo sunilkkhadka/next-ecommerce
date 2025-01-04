@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 const Header = () => {
   return (
-    <header className="w-full border-b">
+    <header className="w-full border-b p-4">
       <div className="wrapper flex justify-between items-center">
         <div className="items-start">
           <Link href="/">
@@ -22,7 +22,7 @@ const Header = () => {
               <ShoppingCart /> Cart
             </Link>
           </Button>
-          <Button asChild variant="ghost">
+          <Button asChild>
             <Link href="/sign-in">
               <UserIcon /> Sign In
             </Link>
