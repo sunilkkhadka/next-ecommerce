@@ -1,0 +1,48 @@
+const sampleData = {
+  products: [
+    {
+      name: "Smartphone",
+      slug: "smartphone",
+      category: "Electronics",
+      images: ["image1.jpg", "image2.jpg"],
+      brand: "TechBrand",
+      description: "Latest model with high-end specs.",
+      stock: 100,
+      price: 799.99,
+      rating: 4.5,
+      numReviews: 120,
+      isFeatured: true,
+      banner: "smartphone-banner.jpg",
+    },
+    {
+      name: "Laptop",
+      slug: "laptop",
+      category: "Electronics",
+      images: ["laptop1.jpg", "laptop2.jpg"],
+      brand: "LaptopBrand",
+      description: "Powerful laptop for work and gaming.",
+      stock: 50,
+      price: 1299.99,
+      rating: 4.8,
+      numReviews: 200,
+      isFeatured: false,
+      banner: "laptop-banner.jpg",
+    },
+    {
+      name: "Headphones",
+      slug: "headphones",
+      category: "Accessories",
+      images: ["headphones1.jpg", "headphones2.jpg"],
+      brand: "SoundBrand",
+      description: "Noise-cancelling over-ear headphones.",
+      stock: 150,
+      price: 299.99,
+      rating: 4.2,
+      numReviews: 80,
+      isFeatured: false,
+      banner: "headphones-banner.jpg",
+    },
+  ],
+};
+
+export default sampleData;
