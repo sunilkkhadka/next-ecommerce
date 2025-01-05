@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Move, MoveRight } from "lucide-react";
+import { MoveRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
