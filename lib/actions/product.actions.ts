@@ -3,6 +3,7 @@
 import { PrismaClient } from "@prisma/client";
 
 import { convertToPlainObject } from "../utils";
+import { Product } from "@/types/product.type";
 
 // Get latest products
 export async function getLatestProducts() {
