@@ -1,9 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { splitCurrency } from "@/lib/utils";
 
-function ProductCard({ product }: { product: any }) {
+import { splitCurrency } from "@/lib/utils";
+import { Product } from "@/types/product.type";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+
+function ProductCard({ product }: { product: Product }) {
   const price = splitCurrency(product.price);
 
   return (
