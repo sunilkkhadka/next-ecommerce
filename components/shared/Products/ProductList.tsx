@@ -15,7 +15,7 @@ const ProductList: React.FC<ProductListProps> = (props) => {
       {data.length > 0 ? (
         <div className="grid gap-7 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {data.map((product: Product) => (
-            <ProductCard product={product} />
+            <ProductCard key={product.id} product={product} />
           ))}
         </div>
       ) : (
