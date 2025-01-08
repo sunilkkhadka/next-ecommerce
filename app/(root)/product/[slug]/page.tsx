@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 import { getProductBySlug } from "@/lib/actions/product.actions";
+import ProductImage from "@/components/shared/Products/ProductImage";
 
 const ProductDetailsPage = async ({ params }: { params: { slug: string } }) => {
   const { slug } = params;
@@ -16,7 +17,9 @@ const ProductDetailsPage = async ({ params }: { params: { slug: string } }) => {
   return (
     <section>
       <div className="grid grid-cols-1 md:grid-cols-5">
-        <div className="col-span-2">{/* images column */}</div>
+        <div className="col-span-2 p-5">
+          <ProductImage images={product.images} />
+        </div>
         <div className="col-span-2 p-5">
           <div className="flex flex-col gap-6">
             <p>
