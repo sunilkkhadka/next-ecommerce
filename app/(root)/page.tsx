@@ -12,7 +12,6 @@ export default async function HomePage() {
 
   return (
     <div>
-      <h1>Test</h1>
       <ProductList data={latestProducts} title="Latest Products" />
     </div>
   );
